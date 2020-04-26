@@ -1,0 +1,8 @@
+{
+  id: meme.id,
+  user_id: meme.user_id,
+  meme_name: meme.meme_name,
+  img_url: meme.img_url,
+  top_text: meme.top_text,
+  bottom_text: meme.bottom_text
+}

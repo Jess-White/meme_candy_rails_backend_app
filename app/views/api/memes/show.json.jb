@@ -1,0 +1,1 @@
+render partial: "meme.json.jb", locals: {meme: @meme}
