@@ -12,3 +12,7 @@
   # User.create(name: "Test User 10", email: "testuser_10@gmail.com", password: "password", password_confirmation: "password")
   # User.create(name: "Test User 11", email: "testuser_11@gmail.com", password: "password", password_confirmation: "password")
   # User.create(name: "Test User 12", email: "testuser_12@gmail.com", password: "password", password_confirmation: "password")
+
+
+  # Meme.create(user_id: 7, meme_name: "New Meme", img_url: "https://a9p9n2x2.stackpathcdn.com/wp-content/blogs.dir/1/files/2019/04/lightfoot-e1554301483146.jpg", top_text: "I said...", bottom_text: "Don't leave your home!")
+  Meme.create(user_id: 7, meme_name: "New Meme2", img_url: "https://consequenceofsound.net/wp-content/uploads/2020/04/trump-lysol-1.jpg", top_text: "Make Lysol", bottom_text: "Great Again")
