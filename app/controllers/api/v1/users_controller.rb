@@ -10,10 +10,10 @@ class Api::V1::UsersController < ApplicationController
 
   def create
     @user = User.new( 
-                      name: params[:name],
-                      email: params[:email],
-                      password: params[:password],
-                      password_confirmation: params[:password_confirmation]
+                      name: params[:user][:name],
+                      email: params[:user][:email],
+                      password: params[:user][:password],
+                      password_confirmation: params[:user][:password_confirmation]
                       )
     if @user.save
       render json: { message: "User created successfully" }, status: :created
