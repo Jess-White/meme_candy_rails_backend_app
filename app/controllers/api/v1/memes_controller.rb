@@ -1,13 +1,22 @@
 class Api::V1::MemesController < ApplicationController
   
-    # before_action :authenticate_user
+    before_action :authenticate_user
 
-    def index 
-      @memes = Meme.all
+    def index
+     
+      if current_user
+        # @memes = Meme.all
+        @memes = current_user.memes
+        render 'index.json.jb'
+      else 
+        render json: {}
+      end
 
-      @memes = @memes.order(id: :asc)
+      # @memes = Meme.all
 
-      render 'index.json.jb'
+      # @memes = @memes.order(id: :asc)
+
+      # render 'index.json.jb'
     end
 
     def create
